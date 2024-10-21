@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT Reserva</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <form id="emailForm" action="/reserva.html">
+
+    <div class="register"><p class="FILMOTECA">FILMOTECA</p><br>
+        <div class="terror2">
+            <img src="/img/vampiro.png" alt="" class="terror">
+            <img src="/img/zombi.png" alt="" class="terror">
+            </div>
+
+        <P>Datos de la reserva</P>
+        <label for="email">Corre Electronico </label><label for="email" class="espacio">--</label><input type="text" name="email" id="email" placeholder="Pepitoperez@gmail.com" required><img src="/img/bxs-envelope.svg" alt=""><br><br><br>
+        <label for="date">Fecha <label for="date" class="espacio">----------------</label><input type="date" name="date" id="date" required><img src="/img/bx-calendar.svg" alt=""><br><br>
+        <label for="pago">Metodo de pago </label><label for="pago" class="espacio">---</label><select name="pago" id="pago">
+            <option value="Tarjeta de Debito">Tarjeta Debito</option>
+            <option value="Tarejta Credito">Tarjeta Credito</option>
+            <option value="Nequi">Nequi</option> 
+        </select> <img src="/img/bx-credit-card.svg" alt=""><br><br>
+        <button type="submit">Enviar</button><br><br>
+        <div id="message" class="message"></div>
+        <div class="terror1">
+        <img src="/img/calabaza.png" alt="" class="terror">
+        <img src="/img/escalofriante.png" alt="" class="terror">
+        </div>
+    </div>
+
+</form>
+
+
+
+<script src="/JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Cine</title>
+    <link rel="stylesheet" href="/css/reserva.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reserva de Sala de Cine</h1>
+        <div class="movie-selection">
+            <label for="movie">Selecciona una película:</label>
+            <select id="movie">
+                <option value="Avengers">Avengers</option>
+                <option value="Inception">Inception</option>
+                <option value="Toy Story">Toy Story</option>
+                <option value="Scary Movie">Scary Movie</option>
+                <option value="Son Como Niños 2">Son Como Niños 2</option>
+                <option value="Que Paso Ayer?">Que Paso Ayer?</option>
+            </select>
+        </div>
+        <div class="seats">
+            <h2>Selecciona tus asientos:</h2><br>
+
+
+            
+            <div class="Pantalla">
+            <p class="textop">Pantalla</p>
+            </div><br><br><br><br>
+
+            <div class="seat-row">
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">A1</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">A2</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">A3</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">A4</span>
+            </div>
+            <div class="seat-row">
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">B1</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">B2</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">B3</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">B4</span>
+            </div>
+            <div class="seat-row">
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">C1</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">C2</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">C3</span>
+                <span class="seat" onclick="toggleSeat(this)"><img src="/img/bx-male.svg" alt=""><img src="/img/bx-male.svg" alt="">C4</span>
+            </div>
+        
+        
+        
+        </div><br><br>
+        <button onclick="confirmReservation()">Confirmar Reserva</button>
+        <div id="message" class="message"></div>
+        <div class="terror1">
+            <img src="/img/calabaza.png" alt="" class="terror">
+            <img src="/img/escalofriante.png" alt="" class="terror">
+        </div>
+    </div>
+    <script src="/JS/reserva.js"></script>
+</body>
+</html>
